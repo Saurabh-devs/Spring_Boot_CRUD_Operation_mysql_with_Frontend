@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- PAGE TITLE -->
+    <h1 class="title">🛒 Product Management</h1>
+
+    <!-- ADD PRODUCT CARD -->
+    <div class="card">
+        <h2>Add Product</h2>
+        <form id="addForm" class="form-row">
+            <input id="addName" placeholder="Product Name" required>
+            <input id="addQuantity" type="number" placeholder="Quantity" required>
+            <input id="addPrice" type="number" placeholder="Price" required>
+            <button type="submit" class="btn primary">Add</button>
+        </form>
+    </div>
+
+    <!-- UPDATE PRODUCT CARD -->
+    <div class="card">
+        <h2>Update Product</h2>
+        <form id="updateForm" class="form-row">
+            <input id="updId" type="number" placeholder="Product ID" required>
+            <input id="updName" placeholder="New Name" required>
+            <input id="updQuantity" type="number" placeholder="New Quantity" required>
+            <input id="updPrice" type="number" placeholder="New Price" required>
+            <button type="submit" class="btn primary">Update</button>
+        </form>
+    </div>
+
+    <!-- SEARCH PRODUCT CARD -->
+    <div class="card">
+        <h2>Search Product</h2>
+        <div class="form-row">
+
+            <input id="searchById" placeholder="Search by ID">
+            <button id="btnSearchId" class="btn secondary">Search</button>
+
+            <input id="searchByName" placeholder="Search by Name">
+            <button id="btnSearchName" class="btn secondary">Search</button>
+
+        </div>
+    </div>
+
+    <!-- PRODUCT TABLE CARD -->
+    <div class="card">
+        <h2>All Products</h2>
+
+        <button id="btnRefresh" class="btn primary small">Refresh</button>
+
+        <table id="productsTable">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+
+            <tbody></tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
