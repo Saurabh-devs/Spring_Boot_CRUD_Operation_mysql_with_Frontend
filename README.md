@@ -65,8 +65,8 @@ Crud_Operations-main
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone https://github.com/PavanTsappati/Crud_Operations-main.git
-cd Crud_Operations-main
+git clone https://github.com/PavanTsappati/Crud_Operations.git
+cd Crud_Operations
 ```
 
 ### 2️⃣ Create MySQL Database
